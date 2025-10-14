@@ -1,0 +1,42 @@
+{
+  "name": "mono-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/lib/index.js",
+  "types": "./dist/es/index.d.ts",
+  "module": "./dist/es/index.js",
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss",
+    "**/*.less"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && rollup -c",
+    "lint:ts": "tsc -p tsconfig.build.json --noEmit",
+    "lint:circular": "madge --extensions js --circular ./dist"
+  },
+  "author": "WindRunnerMax",
+  "license": "MIT",
+  "dependencies": {
+    "@arco-design/web-react": "2.60.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2",
+    "@rollup/plugin-commonjs": "22.0.1",
+    "@rollup/plugin-node-resolve": "13.3.0",
+    "@rollup/plugin-replace": "5.0.4",
+    "glob": "10.3.10",
+    "rollup": "2.75.7",
+    "rollup-plugin-import": "1.1.1",
+    "rollup-plugin-postcss": "4.0.2",
+    "rollup-plugin-typescript2": "0.32.1",
+    "sass-loader": "13.3.3",
+    "tslib": "2.8.1"
+  }
+}
