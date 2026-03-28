@@ -23,7 +23,7 @@ module.exports = {
     commonjs: true,
     es2021: true,
   },
-  ignorePatterns: ["node_modules", "build", "dist", "coverage", "public", "*.html"],
+  ignorePatterns: ["node_modules", "build", "dist", "coverage", "**/public/**", "**/*.html"],
   rules: {
     "semi": "error",
     "quote-props": ["error", "consistent-as-needed"],

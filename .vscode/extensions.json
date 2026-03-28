@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "streetsidesoftware.code-spell-checker",
+    "clinyong.vscode-css-modules",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "xabikos.javascriptsnippets",
+    "pkief.material-icon-theme",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
+    "syler.sass-indented",
+    "mrmlnc.vscode-scss",
+    "stylelint.vscode-stylelint"
+  ]
+}

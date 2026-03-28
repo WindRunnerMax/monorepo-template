@@ -4,7 +4,6 @@ export {
   debounce,
   getUniqueId,
   isArray,
-  isEmptyValue,
   isFunction,
   isNumber,
   isObject,
@@ -13,4 +12,4 @@ export {
   Storage,
   throttle,
   TSON,
-} from "laser-utils";
+} from "@block-kit/utils";

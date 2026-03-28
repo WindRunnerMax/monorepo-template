@@ -1,12 +1,13 @@
 {
-    "cSpell.words": [
-        "arcoblue",
-        "COMPAT",
-        "pako",
-        "pnpm",
-        "Rspack",
-        "TSON",
-        "undoable",
-        "webrtc"
-    ]
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.fixAll.stylelint": "always"
+  },
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+  "cSpell.words": ["arcoblue", "COMPAT", "pako", "pnpm", "Rspack", "TSON", "undoable", "webrtc"],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

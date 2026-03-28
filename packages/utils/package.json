@@ -2,14 +2,16 @@
   "name": "mono-utils",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/lib/index.js",
+  "types": "./dist/es/index.d.ts",
+  "module": "./dist/es/index.js",
   "sideEffects": false,
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "dev": "concurrently \"tsc -p tsconfig.build.json -w\" \"tsc -p tsconfig.lib.json -w\"",
+    "build": "tsc -p tsconfig.build.json && tsc -p tsconfig.lib.json",
     "lint:ts": "tsc -p tsconfig.build.json --noEmit",
     "release": "./publish.sh",
     "test": "jest"
@@ -18,8 +20,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "laser-utils": "0.0.5-alpha.22",
-    "lodash-es": "4.17.21"
+    "@block-kit/utils": "1.0.23"
   },
   "devDependencies": {
     "@babel/core": "7.20.12",

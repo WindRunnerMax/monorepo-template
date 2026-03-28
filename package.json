@@ -9,13 +9,18 @@
     "lint-es": "eslint --fix --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore .",
     "lint-style": "stylelint \"**/*.{css,scss,sass}\" --fix --ignore-path .gitignore"
   },
+  "keywords": [],
+  "author": "Czy",
+  "license": "MIT",
+  "packageManager": "pnpm@8.11.0",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/WindrunnerMax/ReactRspackTemplate"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/WindrunnerMax/ReactRspackTemplate/issues"
   },
@@ -25,6 +30,7 @@
     "@types/node": "20.11.10",
     "@typescript-eslint/eslint-plugin": "6.12.0",
     "@typescript-eslint/parser": "6.12.0",
+    "concurrently": "9.2.1",
     "eslint": "7.11.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.25.3",
@@ -32,18 +38,13 @@
     "eslint-plugin-react": "7.27.0",
     "eslint-plugin-react-hooks": "4.3.0",
     "eslint-plugin-simple-import-sort": "10.0.0",
-    "postcss": "8.3.3",
+    "postcss": "8.5.3",
     "prettier": "2.4.1",
-    "sass": "1.52.3",
-    "postcss-less": "6.0.0",
+    "sass": "1.70.0",
     "stylelint": "14.7.1",
     "stylelint-config-sass-guidelines": "9.0.1",
     "stylelint-config-standard": "25.0.0",
-    "ts-node": "10.9.2",
+    "tsx": "4.21.0",
     "typescript": "5.3.2"
-  },
-  "engines": {
-    "node": ">=16",
-    "pnpm": ">=8"
   }
 }

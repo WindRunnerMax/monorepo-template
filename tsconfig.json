@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "newLine": "lf",
     "allowJs": true,
@@ -9,25 +11,22 @@
     "downlevelIteration": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
     "paths": {
       "mono-utils": ["./packages/utils/src"],
       "mono-utils/dist/*": ["./packages/utils/src/*"]
-    },
+    }
   },
-  "include": [
-    "packages/*/src"
-  ],
+  "include": ["packages/*/src/**/*"],
   "ts-node": {
     "compilerOptions": {
       "module": "commonjs"

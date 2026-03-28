@@ -14,11 +14,11 @@
     "dist"
   ],
   "scripts": {
+    "dev": "rollup -c -w",
     "build": "rm -rf dist && rollup -c",
     "lint:ts": "tsc -p tsconfig.build.json --noEmit",
     "lint:circular": "madge --extensions js --circular ./dist"
   },
-  "author": "WindRunnerMax",
   "license": "MIT",
   "dependencies": {
     "@arco-design/web-react": "2.60.3",
