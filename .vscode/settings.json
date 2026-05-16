@@ -9,5 +9,6 @@
   "cSpell.words": ["arcoblue", "COMPAT", "pako", "pnpm", "Rspack", "TSON", "undoable", "webrtc"],
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "js/ts.tsdk.path": "node_modules/typescript/lib"
 }
