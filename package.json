@@ -1,5 +1,5 @@
 {
-  "name": "rspack-mono-template",
+  "name": "@workspace/root",
   "version": "1.0.0",
   "scripts": {
     "bootstrap": "pnpm install --frozen-lockfile",

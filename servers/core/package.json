@@ -1,0 +1,30 @@
+{
+  "name": "mono-react",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rsbuild dev -c ./rsbuild.config.ts",
+    "build": "rsbuild build -c ./rsbuild.config.ts",
+    "analyze": "BUNDLE_ANALYZE=true rsbuild build -c ./rsbuild.config.ts"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "@workspace/utils": "workspace: *",
+    "@nestjs/common": "11.0.1",
+    "@nestjs/core": "11.0.1",
+    "@nestjs/platform-express": "11.0.1"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "1.7.4"
+  }
+}
