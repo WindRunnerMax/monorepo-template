@@ -22,11 +22,11 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "paths": {
-      "mono-utils": ["./package/utils/src"],
-      "mono-utils/dist/*": ["./package/utils/src/*"]
+      "@workspace/utils": ["./packages/utils/src"],
+      "@workspace/utils/dist/*": ["./packages/utils/src/*"]
     }
   },
-  "include": ["package/*/src/**/*", "web/*/src/**/*"],
+  "include": ["packages/*/src/**/*", "webs/*/src/**/*", "servers/*/src/**/*"],
   "ts-node": {
     "compilerOptions": {
       "module": "commonjs"

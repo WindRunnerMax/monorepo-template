@@ -1,5 +1,4 @@
 {
-  "//": "https://github.com/nestjs/nest/blob/master/sample/08-webpack",
   "$schema": "https://json.schemastore.org/nest-cli",
   "compilerOptions": {
     "deleteOutDir": true

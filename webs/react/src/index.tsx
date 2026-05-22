@@ -1,4 +1,4 @@
-import { DateTime } from "mono-utils";
+import { DateTime } from "@workspace/utils";
 import ReactDOM from "react-dom";
 
 import styles from "./index.m.scss";

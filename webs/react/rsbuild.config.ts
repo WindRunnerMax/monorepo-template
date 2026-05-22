@@ -5,6 +5,8 @@ import { pluginLess } from "@rsbuild/plugin-less";
 import { pluginReact } from "@rsbuild/plugin-react";
 import { pluginSass } from "@rsbuild/plugin-sass";
 
+const WORKSPACE = path.resolve(__dirname, "../../");
+
 /**
  * https://rsbuild.rs/zh/config/
  */
@@ -35,14 +37,14 @@ export default defineConfig({
       },
     ],
   },
-  html: {
-    template: "./public/index.html",
-  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      "mono-utils": path.resolve(__dirname, "../utils/src"),
+      "@workspace/utils": path.resolve(WORKSPACE, "packages/utils/src"),
     },
+  },
+  html: {
+    template: "./public/index.html",
   },
   output: {
     distPath: "./build",
