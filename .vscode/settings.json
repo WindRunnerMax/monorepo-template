@@ -6,7 +6,17 @@
     "source.fixAll.stylelint": "always"
   },
   "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
-  "cSpell.words": ["arcoblue", "COMPAT", "pako", "pnpm", "Rspack", "TSON", "undoable", "webrtc"],
+  "cSpell.words": [
+    "arcoblue",
+    "COMPAT",
+    "pako",
+    "pnpm",
+    "rsbuild",
+    "Rspack",
+    "TSON",
+    "undoable",
+    "webrtc"
+  ],
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
