@@ -39,7 +39,6 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
       "@workspace/utils": path.resolve(WORKSPACE, "packages/utils/src"),
     },
   },

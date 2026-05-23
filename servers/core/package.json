@@ -1,12 +1,10 @@
 {
-  "name": "mono-react",
+  "name": "@workspace/core",
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "dev": "nodemon --watch ./src --ext ts --exec \"npm run dev:prod\"",
-    "build": "rsbuild build -c ./rsbuild.config.ts",
-    "dev:prod": "NEST_ENV=prod npm run build && node build/index.js",
-    "analyze": "BUNDLE_ANALYZE=true rsbuild build -c ./rsbuild.config.ts"
+    "dev": "export NEST_ENV=dev && rollup -c -w",
+    "build": "rm -rf dist && rollup -c"
   },
   "keywords": [],
   "license": "MIT",
@@ -14,12 +12,16 @@
     "@nestjs/common": "11.0.1",
     "@nestjs/core": "11.0.1",
     "@nestjs/platform-express": "11.0.1",
-    "@workspace/utils": "workspace: *",
-    "reflect-metadata": "0.2.2"
+    "@workspace/utils": "workspace: *"
   },
   "devDependencies": {
-    "nodemon": "3.0.1",
-    "@rsbuild/core": "1.7.4",
-    "webpack-node-externals": "^3.0.0"
+    "@rollup/plugin-alias": "6.0.0",
+    "@rollup/plugin-commonjs": "22.0.1",
+    "@rollup/plugin-node-resolve": "13.3.0",
+    "@rollup/plugin-replace": "5.0.4",
+    "glob": "10.3.10",
+    "rollup": "2.75.7",
+    "rollup-plugin-typescript2": "0.32.1",
+    "tslib": "2.8.1"
   }
 }
