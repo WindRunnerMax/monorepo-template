@@ -6,7 +6,7 @@
     "lint:ts": "pnpm run --filter '*' lint:ts",
     "lint:es": "eslint --fix --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{css,scss,sass}\" --fix --ignore-path .gitignore",
-    "rm-modules": "pnpm --parallel -r exec rm -rf node_modules && rm -rf node_modules"
+    "rm:modules": "pnpm --parallel -r exec rm -rf node_modules && rm -rf node_modules"
   },
   "keywords": [],
   "author": "Czy",

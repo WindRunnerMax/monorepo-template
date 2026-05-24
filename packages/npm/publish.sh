@@ -27,6 +27,7 @@ function echo_notice {
 }
 
 echo_notice "$package@$version"
+echo_notice "Loc: $(pnpm --filter "${package}" exec pwd)"
 
 if ! check_argument "--emit" || check_argument "--build-only"; then
     echo_notice "Notice: Current Version Will Not Publish To NPM"

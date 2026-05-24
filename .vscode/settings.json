@@ -5,7 +5,7 @@
     "source.fixAll.eslint": "always",
     "source.fixAll.stylelint": "always"
   },
-  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
   "cSpell.words": [
     "arcoblue",
     "COMPAT",
