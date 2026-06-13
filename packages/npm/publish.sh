@@ -5,11 +5,10 @@ set -e # -x
 dir=$(pwd)
 bash_args="$@"
 dist_dir="./dist"
-cache_dir="./.cache"
 # npm version patch --no-git-tag-version
 package=$(echo "console.log(require(\"./package.json\").name)" | node)
 version=$(echo "console.log(require(\"./package.json\").version)" | node)
-export BUILD_VERSION=$version
+cache_dir="./node_modules/.cache/${package}"
 
 function check_argument {
     local value=$1
@@ -26,6 +25,7 @@ function echo_notice {
     echo -e "\033[32m$value\033[0m"
 }
 
+export BUILD_VERSION=$version
 echo_notice "$package@$version"
 echo_notice "Loc: $(pnpm --filter "${package}" exec pwd)"
 
