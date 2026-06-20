@@ -1,3 +1,25 @@
+/* stylelint-disable selector-no-qualifying-type */
+@import "@arco-design/web-react/es/style/index";
+
+/**
+ * Dark Theme
+ * - Only for root selector (cannot be nested)
+ */
+@mixin dark-theme {
+  body[arco-theme="dark"] {
+    @content;
+  }
+}
+
+body {
+  background-color: var(--color-bg-1);
+  color: var(--color-text-1);
+}
+
 .example {
   font-size: 20px;
+}
+
+@include dark-theme {
+  background-color: var(--color-bg-5);
 }

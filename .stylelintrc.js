@@ -33,5 +33,6 @@ module.exports = {
         "ignorePseudoClasses": ["global"],
       },
     ],
+    "string-quotes": null,
   },
 };
